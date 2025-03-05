@@ -89,12 +89,12 @@ function applyCoupon() {
     totalAmount *= 0.9; // Apply 10% discount
     document.querySelector("#mini-table tr:nth-child(5) td:nth-child(2)").textContent = `${Math.round(totalAmount)} BDT`;
   } 
-  else if (couponInput === "BARKING90") {
+   else if (couponInput === "BARKING90") {
     alert("Coupon applied! 90% discount.");
     // Update total price after applying discount (example)
     let totalAmount = 0;
     cartItems.forEach(item => totalAmount += item.quantity * item.price);
-    totalAmount *= 0.1; // Apply 10% discount
+    totalAmount *= 0.1; // Apply 90% discount
     document.querySelector("#mini-table tr:nth-child(5) td:nth-child(2)").textContent = `${Math.round(totalAmount)} BDT`;
   }
   else {
